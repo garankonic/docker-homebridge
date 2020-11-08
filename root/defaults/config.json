@@ -1,0 +1,41 @@
+{
+    "bridge": {
+        "name": "Homebridge 70B6",
+        "username": "0E:A5:59:C2:70:B6",
+        "port": 53477,
+        "pin": "031-45-154"
+    },
+    "accessories": [
+        {
+            "accessory": "RollingCurtain",
+            "name": "Curtain",
+            "pin_stop": "35",
+            "pin_up": "38",
+            "pin_down": "40",
+            "closing_time": "23000"
+        },
+        {
+            "name": "Пылесос",
+            "ip": "192.168.1.16",
+            "token": "75435278336e4b6c466f63626f524548",
+            "waterBox": false,
+            "silent": false,
+            "pause": true,
+            "pauseWord": "пауза",
+            "findMe": true,
+            "findMeWord": "ты где",
+            "dock": true,
+            "delay": false,
+            "cleanword": "уборка",
+            "autoroom": false,
+            "accessory": "XiaomiRoborockVacuum"
+        }
+    ],
+    "platforms": [
+        {
+            "name": "Config",
+            "port": 8080,
+            "platform": "config"
+        }
+    ]
+}

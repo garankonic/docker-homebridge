@@ -1,0 +1,3 @@
+[submodule "root/defaults/node_modules"]
+	path = root/defaults/node_modules
+	url = git@github.com:garankonic/homebridge-plugins.git

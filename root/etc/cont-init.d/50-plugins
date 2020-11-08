@@ -7,6 +7,12 @@ echo "Homebridge: Installing plugins..."
 npm prune
 npm install --unsafe-perm --production
 
+# add my own accessories
+if [ -e /defaults/my_accessories.sh ]
+then
+	chmod +x /defaults/my_accessories.sh
+	exec /defaults/my_accessories.sh
+fi
 # fix permissions
 chown -R abc:abc /homebridge
 
